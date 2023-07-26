@@ -12,7 +12,18 @@ import {
   CNavItem,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
+import {
+  cilBell,
+  cilEnvelopeOpen,
+  cilList,
+  cilMenu,
+  cibFacebook,
+  cibEbay,
+  cibLinkedin,
+  cibDiscord,
+  cibTwitch,
+  cibTwitter,
+} from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
@@ -36,34 +47,37 @@ const AppHeader = () => {
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
-            <CNavLink to="/dashboard" component={NavLink}>
-              Dashboard
+            <CNavLink href="https://www.linkedin.com/in/tina-nguyen-342610136/" target="_blank">
+              <CIcon icon={cibLinkedin} size="lg" />
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
+            <CNavLink href="https://www.facebook.com/haruka.yukimura.35" target="_blank">
+              <CIcon icon={cibFacebook} size="lg" />
+            </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
+            <CNavLink href="https://www.ebay.com/str/kyokostore" target="_blank">
+              <CIcon icon={cibEbay} size="lg" />
+            </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="https://discordapp.com/users/925560438119354458" target="_blank">
+              <CIcon icon={cibDiscord} size="lg" />
+            </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="https://www.twitch.tv/yukimurakyoko" target="_blank">
+              <CIcon icon={cibTwitch} size="lg" />
+            </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="https://twitter.com/Yukimura_Kyoko" target="_blank">
+              <CIcon icon={cibTwitter} size="lg" />
+            </CNavLink>
           </CNavItem>
         </CHeaderNav>
-        <CHeaderNav>
-          <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilBell} size="lg" />
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilList} size="lg" />
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilEnvelopeOpen} size="lg" />
-            </CNavLink>
-          </CNavItem>
-        </CHeaderNav>
+        <CHeaderNav></CHeaderNav>
         <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
         </CHeaderNav>

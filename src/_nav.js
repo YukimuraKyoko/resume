@@ -31,17 +31,6 @@ const _nav = [
     // },
   },
   {
-    component: CNavItem,
-    name: 'Contact',
-    to: '/about',
-    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
-    // icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    // badge: {
-    //   color: 'info',
-    //   text: 'NEW',
-    // },
-  },
-  {
     component: CNavTitle,
     name: 'Software Developer',
   },
