@@ -45,7 +45,8 @@ const AppHeader = () => {
         <CHeaderBrand className="mx-auto d-md-none" to="/">
           <CIcon icon={logo} height={48} alt="Logo" />
         </CHeaderBrand>
-        <CHeaderNav className="d-none d-md-flex me-auto">
+        <CHeaderNav className="d-none d-md-flex me-auto"></CHeaderNav>
+        <CHeaderNav>
           <CNavItem>
             <CNavLink href="https://www.linkedin.com/in/tina-nguyen-342610136/" target="_blank">
               <CIcon icon={cibLinkedin} size="lg" />
@@ -77,10 +78,9 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
         </CHeaderNav>
-        <CHeaderNav></CHeaderNav>
-        <CHeaderNav className="ms-3">
+        {/* <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
-        </CHeaderNav>
+        </CHeaderNav> */}
       </CContainer>
       <CHeaderDivider />
       <CContainer fluid>
