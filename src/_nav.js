@@ -37,7 +37,7 @@ const _nav = [
   {
     component: CNavItem,
     name: "Bachelors' Degree",
-    to: '/charts',
+    to: '/degree',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
@@ -107,7 +107,7 @@ const _nav = [
   {
     component: CNavItem,
     name: "Minor's Degree",
-    to: '/charts',
+    to: '/degree',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
