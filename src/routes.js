@@ -5,6 +5,17 @@ const Degree = React.lazy(() => import('./views/degree/Degree'))
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const CodingInstructor = React.lazy(() => import('./views/codinginstructor/CodingInstructor'))
+
+// Developers
+const UnityEditorDeveloper = React.lazy(() =>
+  import('./views/developer/unityeditordeveloper/UnityEditorDeveloper'),
+)
+const VRDeveloper = React.lazy(() => import('./views/developer/vrdeveloper/VRDeveloper'))
+const WebGLUnityProjects = React.lazy(() =>
+  import('./views/developer/webglunityprojects/WebGLUnityProjects'),
+)
+const WebP5Projects = React.lazy(() => import('./views/developer/webp5projects/WebP5Projects'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -55,7 +66,12 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/degree', name: 'Degree', element: Degree },
+  { path: '/codinginstructor', name: 'CodingInstructor', element: CodingInstructor },
   { path: '/about', name: 'About', element: About },
+  { path: '/unityeditordeveloper', name: 'UnityEditorDeveloper', element: UnityEditorDeveloper },
+  { path: '/vrdeveloper', name: 'VRDeveloper', element: VRDeveloper },
+  { path: '/webglunityprojects', name: 'WebGLUnityProjects', element: WebGLUnityProjects },
+  { path: '/webp5projects', name: 'WebP5Projects', element: WebP5Projects },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },

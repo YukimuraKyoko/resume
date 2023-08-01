@@ -48,27 +48,22 @@ const _nav = [
       {
         component: CNavItem,
         name: 'VR Developer',
-        to: '/login',
+        to: '/vrdeveloper',
       },
       {
         component: CNavItem,
         name: 'Unity Editor Developer',
-        to: '/register',
-      },
-      {
-        component: CNavItem,
-        name: '2D Game Developer',
-        to: '/404',
+        to: '/unityeditordeveloper',
       },
       {
         component: CNavItem,
         name: 'Web P5 Projects',
-        to: '/500',
+        to: '/webp5projects',
       },
       {
         component: CNavItem,
         name: 'WebGL Unity Projects',
-        to: '/500',
+        to: '/webglunityprojects',
       },
     ],
   },
