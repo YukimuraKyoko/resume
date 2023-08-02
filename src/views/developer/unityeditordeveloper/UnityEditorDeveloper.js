@@ -13,6 +13,11 @@ const UnityEditorDeveloper = () => {
           <video controls width="100%" height="100%" src={MelodyVid} />
           <ul>
             <li>
+              <a href="https://en.wikipedia.org/wiki/Projekt_Melody">
+                Projekt Melody Wiki page here
+              </a>
+            </li>
+            <li>
               Learned Unity Editor scripting for creating an animator adjusting tool for a vtuber
               stream.
             </li>

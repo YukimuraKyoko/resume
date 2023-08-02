@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ShaderSphere</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+    <style>
+        h1{text-align:center;}
+        .center{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width:50%;
+        }
+    </style>
+
+    <body>
+        <div id="unity-container" class="unity-desktop">
+            <canvas id="unity-canvas" width=960 height=600></canvas>
+            <div id="unity-loading-bar">
+                <div id="unity-logo"></div>
+                <div id="unity-progress-bar-empty">
+                    <div id="unity-progress-bar-full"></div>
+                </div>
+            </div>
+            <div id="unity-warning"> </div>
+            <div id="unity-footer">
+                <div id="unity-webgl-logo"></div>
+                <div id="unity-fullscreen-button"></div>
+                <div id="unity-build-title">ShaderSphere</div>
+            </div>
+            <br />
+
+        </div>
+
+        <script>
+            var container = document.querySelector("#unity-container");
+            var canvas = document.querySelector("#unity-canvas");
+            var loadingBar = document.querySelector("#unity-loading-bar");
+            var progressBarFull = document.querySelector("#unity-progress-bar-full");
+            var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+            var warningBanner = document.querySelector("#unity-warning");
+
+            // Shows a temporary message banner/ribbon for a few seconds, or
+            // a permanent error message on top of the canvas if type=='error'.
+            // If type=='warning', a yellow highlight color is used.
+            // Modify or remove this function to customize the visually presented
+            // way that non-critical warnings and error messages are presented to the
+            // user.
+            function unityShowBanner(msg, type) {
+                function updateBannerVisibility() {
+                    warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+                }
+                var div = document.createElement('div');
+                div.innerHTML = msg;
+                warningBanner.appendChild(div);
+                if (type == 'error') div.style = 'background: red; padding: 10px;';
+                else {
+                    if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                    setTimeout(function () {
+                        warningBanner.removeChild(div);
+                        updateBannerVisibility();
+                    }, 5000);
+                }
+                updateBannerVisibility();
+            }
+
+            var buildUrl = "Build";
+            var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
+            var config = {
+                dataUrl: buildUrl + "/WebGL Builds.data",
+                frameworkUrl: buildUrl + "/WebGL Builds.framework.js",
+                codeUrl: buildUrl + "/WebGL Builds.wasm",
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "DefaultCompany",
+                productName: "ShaderSphere",
+                productVersion: "0.1",
+                showBanner: unityShowBanner,
+            };
+
+            // By default Unity keeps WebGL canvas render target size matched with
+            // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+            // Set this to false if you want to decouple this synchronization from
+            // happening inside the engine, and you would instead like to size up
+            // the canvas DOM size and WebGL render target sizes yourself.
+            // config.matchWebGLToCanvasSize = false;
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                container.className = "unity-mobile";
+                // Avoid draining fillrate performance on mobile devices,
+                // and default/override low DPI mode on mobile browsers.
+                config.devicePixelRatio = 1;
+                unityShowBanner('WebGL builds are not supported on mobile devices.');
+            } else {
+                canvas.style.width = "960px";
+                canvas.style.height = "600px";
+            }
+            loadingBar.style.display = "block";
+
+            var script = document.createElement("script");
+            script.src = loaderUrl;
+            script.onload = () => {
+                createUnityInstance(canvas, config, (progress) => {
+                    progressBarFull.style.width = 100 * progress + "%";
+                }).then((unityInstance) => {
+                    loadingBar.style.display = "none";
+                    fullscreenButton.onclick = () => {
+                        unityInstance.SetFullscreen(1);
+                    };
+                }).catch((message) => {
+                    alert(message);
+                });
+            };
+            document.body.appendChild(script);
+        </script>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>How it works</h1>
+        <a href="../../../assets/img/ShaderSphereExplanation.png" target="_blank" class="center">
+            <img src="../../../assets/img/ShaderSphereExplanation.png" width="75%" height="75%">
+        </a>
+        <pre>
+            <code>
+                Shader "Kyoko/AnimationSphere"
+                {
+                    Properties
+                    {
+                        _MainTex ("Texture", 2D) = "white" {}
+                        _Color ("Color", Color) = (1,1,1,1)
+                        _Color2 ("Color2", Color) = (1,1,1,1)
+                        //_Xvalue("Xvalue", Range(-1,1)) = 1.0
+                        _Xstep("Xstep", Range(-0.01,1)) = 1.0
+                        //_Yvalue("Yvalue", Range(-1,1)) = 1.0
+                        _Ystep("Ystep", Range(0,1)) = 1.0
+                        _Xfrac("Xfrac", Range(1,10)) = 10.
+                        _Yfrac("Yfrac", Range(1,10)) = 10.
+                        _Xcollapse("Xcollapse", Range(0,1)) = 0
+                        _Ycollapse("Ycollapse", Range(0,1)) = 0
+                    }
+                    SubShader
+                    {
+                    Tags { "RenderType"="Opaque" }
+                    LOD 100
+                    Cull Front
+                    Pass
+                    {
+                        CGPROGRAM
+                        #pragma vertex vert
+                        #pragma fragment frag
+                        // make fog work
+                        #pragma multi_compile_fog
+
+                        #include "UnityCG.cginc"
+
+                        struct appdata
+                        {
+                            float4 vertex : POSITION;
+                            float2 uv : TEXCOORD0;
+                        };
+
+                        struct v2f
+                        {
+                            float2 uv : TEXCOORD0;
+                            UNITY_FOG_COORDS(1)
+                            float4 vertex : SV_POSITION;
+                        };
+
+                        sampler2D _MainTex;
+                        float4 _MainTex_ST;
+                        fixed4 _Color;
+                        fixed4 _Color2;
+                        //float _Xvalue;
+                        float _Xstep;
+                        //float _Yvalue;
+                        float _Ystep;
+                        int _Xfrac;
+                        int _Yfrac;
+                        float _Xcollapse;
+                        float _Ycollapse;
+
+                        v2f vert (appdata v)
+                        {
+                            v2f o;
+                            o.vertex = UnityObjectToClipPos(v.vertex);
+                            o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                            UNITY_TRANSFER_FOG(o,o.vertex);
+                            return o;
+                        }
+
+                        fixed4 frag (v2f i) : SV_Target
+                        {
+                            float2 uv = i.uv;
+                            fixed4 col = tex2D(_MainTex, uv);
+                            float3 XcollapseUse;
+                            float3 YcollapseUse;
+
+                            if(_Xcollapse == 1){
+                                XcollapseUse = frac(-uv.x * _Xfrac) < _Xstep ? _Color2 : _Color;
+                            }
+                            else{
+                                XcollapseUse = 0;
+                            }
+                            if(_Ycollapse == 1){
+                                YcollapseUse = frac(-uv.y * _Yfrac) < _Ystep ? _Color2 : _Color;
+                            }
+                            else{
+                                YcollapseUse = 0;
+                            }
+
+                            //float mix = frac(uv.x* _Xfrac);
+                            //col.rgb = lerp(_Color, _Color2, mix);
+                            //col.rgb = frac(uv.x * _Xfrac) < _Xstep ? _Color2 : _Color;
+                            col.rgb = (frac(uv.x * _Xfrac) < _Xstep ? _Color2 : _Color) +
+                            XcollapseUse +
+                            YcollapseUse +
+                            (frac(uv.y * _Yfrac) < _Ystep ? _Color2 : _Color);
+                            return col;
+                        }
+                        ENDCG
+                    }
+                }
+            }
+
+
+            </code>
+        </pre>
+    </body>
+</html>
