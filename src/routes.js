@@ -16,6 +16,7 @@ const WebGLUnityProjects = React.lazy(() =>
   import('./views/developer/webglunityprojects/WebGLUnityProjects'),
 )
 const WebP5Projects = React.lazy(() => import('./views/developer/webp5projects/WebP5Projects'))
+const OtherProjects = React.lazy(() => import('./views/developer/otherprojects/OtherProjects'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -66,6 +67,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/degree', name: 'Degree', element: Degree },
+  { path: '/otherprojects', name: 'OtherProjects', element: OtherProjects },
   { path: '/codinginstructor', name: 'CodingInstructor', element: CodingInstructor },
   { path: '/about', name: 'About', element: About },
   { path: '/unityeditordeveloper', name: 'UnityEditorDeveloper', element: UnityEditorDeveloper },
