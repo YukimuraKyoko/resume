@@ -6,12 +6,12 @@ const WebGLUnityProjects = () => {
   //CURRENTLY RETURNS A Unexpected token '<' error
   //Falling back to regular html WebGL load
   //
-  const { unityProvider } = useUnityContext({
-    loaderUrl: '/epic/Build/epic.loader.js',
-    dataUrl: '/epic/Build/epic.data',
-    frameworkUrl: '/epic/Build/epic.framework.js',
-    codeUrl: '/epic/Build/epic.wasm',
-  })
+  // const { unityProvider } = useUnityContext({
+  //   loaderUrl: '/epic/Build/epic.loader.js',
+  //   dataUrl: '/epic/Build/epic.data',
+  //   frameworkUrl: '/epic/Build/epic.framework.js',
+  //   codeUrl: '/epic/Build/epic.wasm',
+  // })
 
   return (
     <>
@@ -20,7 +20,7 @@ const WebGLUnityProjects = () => {
           <h4>Epic Roll a Ball</h4>
         </CCardHeader>
         <CCardBody>
-          <Unity unityProvider={unityProvider} />
+          {/* <Unity unityProvider={unityProvider} /> */}
           <p>Currently broken, awaiting on a support ticket</p>
           {/* <a href="assets/webgl/WebGL2/index.html" target="_blank">
             Game Link

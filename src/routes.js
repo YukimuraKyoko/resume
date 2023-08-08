@@ -18,6 +18,15 @@ const WebGLUnityProjects = React.lazy(() =>
 const WebP5Projects = React.lazy(() => import('./views/developer/webp5projects/WebP5Projects'))
 const OtherProjects = React.lazy(() => import('./views/developer/otherprojects/OtherProjects'))
 
+// Animator
+const ThreeDAnimations = React.lazy(() => import('./views/animator/ThreeDAnimations'))
+const ThreeDModeling = React.lazy(() => import('./views/animator/ThreeDModeling'))
+const OtherArtWorks = React.lazy(() => import('./views/animator/OtherArtWorks'))
+
+// Japanese
+const VRNihongo = React.lazy(() => import('./views/japanese/VRNihongo'))
+const OtherWorks = React.lazy(() => import('./views/japanese/OtherWorks'))
+
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
@@ -67,6 +76,11 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/degree', name: 'Degree', element: Degree },
+  { path: '/vrnihongo', name: 'VRNihongo', element: VRNihongo },
+  { path: '/otherworks', name: 'OtherWorks', element: OtherWorks },
+  { path: '/animator/threedanimations', name: 'ThreeDAnimations', element: ThreeDAnimations },
+  { path: '/animator/threedmodeling', name: 'ThreeDModeling', element: ThreeDModeling },
+  { path: '/animator/otherartworks', name: 'OtherArtWorks', element: OtherArtWorks },
   { path: '/otherprojects', name: 'OtherProjects', element: OtherProjects },
   { path: '/codinginstructor', name: 'CodingInstructor', element: CodingInstructor },
   { path: '/about', name: 'About', element: About },

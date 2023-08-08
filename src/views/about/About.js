@@ -45,6 +45,23 @@ const About = () => {
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
+          <h4>Strengths / Weaknesses</h4>
+        </CCardHeader>
+        <CCardBody>
+          <p>
+            I am weak in working on the same project for a prolonged period (over the course of a
+            few weeks or so), before getting burnt out and I start losing motivation. This also
+            applies to repetitive tasks, such as all day customer service, or all day restocking.
+          </p>
+          <p>
+            To counter this, I&apos;m strong in learning a lot of thing at once and prefer to do
+            multiple tasks or alternating between them on a week to week basis, juggling in between
+            projects to help stay motivated and always working on something different.
+          </p>
+        </CCardBody>
+      </CCard>
+      <CCard className="mb-4">
+        <CCardHeader>
           <h4>Hobbies</h4>
         </CCardHeader>
         <CCardBody>

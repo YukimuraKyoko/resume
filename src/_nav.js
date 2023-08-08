@@ -87,19 +87,19 @@ const _nav = [
   {
     component: CNavItem,
     name: '3D Modeling',
-    to: '/charts',
+    to: '/animator/threedmodeling',
     icon: <CIcon icon={cibBlender} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: '3D Animations',
-    to: '/charts',
+    to: '/animator/threedanimations',
     icon: <CIcon icon={cilPen} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Other Art Works',
-    to: '/charts',
+    to: '/animator/otherartworks',
     icon: <CIcon icon={cilBrush} customClassName="nav-icon" />,
   },
   {
@@ -115,13 +115,13 @@ const _nav = [
   {
     component: CNavItem,
     name: 'VR Nihongo',
-    to: '/charts',
+    to: '/vrnihongo',
     icon: <CIcon icon={cilGroup} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Other Works',
-    to: '/charts',
+    to: '/otherworks',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
@@ -174,43 +174,43 @@ const _nav = [
       },
     ],
   },
-  {
-    component: CNavTitle,
-    name: 'Extras',
-  },
-  {
-    component: CNavGroup,
-    name: 'Pages',
-    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Login',
-        to: '/login',
-      },
-      {
-        component: CNavItem,
-        name: 'Register',
-        to: '/register',
-      },
-      {
-        component: CNavItem,
-        name: 'Error 404',
-        to: '/404',
-      },
-      {
-        component: CNavItem,
-        name: 'Error 500',
-        to: '/500',
-      },
-    ],
-  },
-  {
-    component: CNavItem,
-    name: 'Docs',
-    href: 'https://coreui.io/react/docs/templates/installation/',
-    icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
-  },
+  // {
+  //   component: CNavTitle,
+  //   name: 'Extras',
+  // },
+  // {
+  //   component: CNavGroup,
+  //   name: 'Pages',
+  //   icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+  //   items: [
+  //     {
+  //       component: CNavItem,
+  //       name: 'Login',
+  //       to: '/login',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Register',
+  //       to: '/register',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Error 404',
+  //       to: '/404',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Error 500',
+  //       to: '/500',
+  //     },
+  //   ],
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Docs',
+  //   href: 'https://coreui.io/react/docs/templates/installation/',
+  //   icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
+  // },
 ]
 
 export default _nav
