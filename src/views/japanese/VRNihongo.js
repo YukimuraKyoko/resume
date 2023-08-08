@@ -10,7 +10,7 @@ const VRNihongo = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>VRNihongo - Moe Sensei</h4>
+          <h4>VRNihongo - Moe Sensei, 2019</h4>
         </CCardHeader>
         <CCardBody>
           <img src={vrnihongo} width="70%"></img>
