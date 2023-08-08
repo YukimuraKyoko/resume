@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_coreui_coreui_free_react_admin_template=self.webpackChunk_coreui_coreui_free_react_admin_template||[]).push([[3625],{33625:function(e,r,n){n.r(r);n(72791);var i=n(78983),c=n(80184);r.default=function(){return(0,c.jsx)(c.Fragment,{children:(0,c.jsxs)(i.xH,{className:"mb-4",children:[(0,c.jsx)(i.bn,{children:(0,c.jsx)("h4",{children:"Currently work in progress"})}),(0,c.jsx)(i.sl,{children:(0,c.jsx)("p",{children:"learning 3D animations via blender"})})]})})}}}]);
+//# sourceMappingURL=3625.19d05311.chunk.js.map
