@@ -11,7 +11,7 @@ const OtherProjects = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>VRChat - Nihongo Board - VR Mobile/UI Japanese learning application</h4>
+          <h4>VRChat - Nihongo Board - VR Mobile/UI Japanese learning application, 2019</h4>
         </CCardHeader>
         <CCardBody>
           <video controls width="100%" height="100%" src={nihongoboardvid} />
@@ -30,7 +30,7 @@ const OtherProjects = () => {
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>VRChat - Japanese Study Hall - VR Japanese learning world</h4>
+          <h4>VRChat - Japanese Study Hall - VR Japanese learning world, 2019</h4>
         </CCardHeader>
         <CCardBody>
           <video controls width="100%" height="100%" src={jlptworldvid} />
@@ -48,7 +48,7 @@ const OtherProjects = () => {
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Unity HLSL - Shader Sphere</h4>
+          <h4>Unity HLSL - Shader Sphere, 2019</h4>
         </CCardHeader>
         <CCardBody>
           <video controls width="100%" height="100%" src={hlslvid} />

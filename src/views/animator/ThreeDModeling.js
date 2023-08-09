@@ -12,7 +12,7 @@ const ThreeDModeling = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>VRChat - Homeworld</h4>
+          <h4>VRChat - Homeworld, 2019</h4>
         </CCardHeader>
         <CCardBody>
           <img src={home1} width="70%"></img>

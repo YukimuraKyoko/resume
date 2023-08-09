@@ -7,7 +7,7 @@ const UnityEditorDeveloper = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Projekt Melody - Unity Editor Developer</h4>
+          <h4>Projekt Melody - Unity Editor Developer, 2020</h4>
         </CCardHeader>
         <CCardBody>
           <video controls width="100%" height="100%" src={MelodyVid} />

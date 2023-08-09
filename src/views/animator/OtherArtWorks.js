@@ -14,7 +14,7 @@ const OtherArtWorks = () => {
         <CCol xs={6}>
           <CCard className="mb-4">
             <CCardHeader>
-              <h4>Fist Sketch</h4>
+              <h4>Fist Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
               <img src={drawing1} width="50%"></img>
@@ -29,7 +29,7 @@ const OtherArtWorks = () => {
         <CCol xs={6}>
           <CCard className="mb-4">
             <CCardHeader>
-              <h4>Butterfly Knife Sketch</h4>
+              <h4>Butterfly Knife Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
               <img src={drawing2} width="63%"></img>
@@ -43,7 +43,7 @@ const OtherArtWorks = () => {
         <CCol xs={6}>
           <CCard className="mb-4">
             <CCardHeader>
-              <h4>Old House Sketch</h4>
+              <h4>Old House Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
               <img src={drawing3} width="84%"></img>
@@ -56,7 +56,7 @@ const OtherArtWorks = () => {
         <CCol xs={6}>
           <CCard className="mb-4">
             <CCardHeader>
-              <h4>Magazine/Fashion Sketch</h4>
+              <h4>Magazine/Fashion Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
               <img src={drawing4} width="50%"></img>
@@ -69,7 +69,7 @@ const OtherArtWorks = () => {
         <CCol xs={6}>
           <CCard className="mb-4">
             <CCardHeader>
-              <h4>Key Sketch</h4>
+              <h4>Key Sketch, 2015</h4>
             </CCardHeader>
             <CCardBody>
               <img src={drawing5} width="50%"></img>

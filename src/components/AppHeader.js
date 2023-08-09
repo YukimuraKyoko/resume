@@ -23,6 +23,7 @@ import {
   cibDiscord,
   cibTwitch,
   cibTwitter,
+  cibSteam,
 } from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
@@ -77,7 +78,13 @@ const AppHeader = () => {
               <CIcon icon={cibTwitter} size="lg" />
             </CNavLink>
           </CNavItem>
+          <CNavItem>
+            <CNavLink href="https://steamcommunity.com/id/Haruka290/" target="_blank">
+              <CIcon icon={cibSteam} size="lg" />
+            </CNavLink>
+          </CNavItem>
         </CHeaderNav>
+
         {/* <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
         </CHeaderNav> */}

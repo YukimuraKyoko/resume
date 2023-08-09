@@ -131,13 +131,13 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Pharmacy Technician',
-    to: '/charts',
+    to: '/pharmacytechnician',
     icon: <CIcon icon={cilMedicalCross} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'eBay Store',
-    to: '/charts',
+    to: '/ebay',
     icon: <CIcon icon={cibEbay} customClassName="nav-icon" />,
   },
   {
@@ -148,12 +148,12 @@ const _nav = [
       {
         component: CNavItem,
         name: 'CCSF Bookstore',
-        to: '/login',
+        to: '/ccsfbookstore',
       },
       {
         component: CNavItem,
         name: 'Japan Town Retail',
-        to: '/register',
+        to: '/japantownretail',
       },
     ],
   },
@@ -165,12 +165,12 @@ const _nav = [
       {
         component: CNavItem,
         name: 'Truepill Warehouse',
-        to: '/login',
+        to: '/truepillwarehouse',
       },
       {
         component: CNavItem,
         name: 'Amazon Warehouse',
-        to: '/register',
+        to: '/amazonwarehouse',
       },
     ],
   },

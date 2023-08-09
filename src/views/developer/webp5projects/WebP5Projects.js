@@ -7,7 +7,7 @@ const WebP5Projects = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Platformer</h4>
+          <h4>Platformer, 2018</h4>
         </CCardHeader>
         <CCardBody>
           <div className="p5js">
@@ -44,7 +44,7 @@ const WebP5Projects = () => {
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Flappy Circle</h4>
+          <h4>Flappy Circle, 2018</h4>
         </CCardHeader>
         <CCardBody>
           <div className="p5js">

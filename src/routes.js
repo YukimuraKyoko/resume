@@ -27,6 +27,14 @@ const OtherArtWorks = React.lazy(() => import('./views/animator/OtherArtWorks'))
 const VRNihongo = React.lazy(() => import('./views/japanese/VRNihongo'))
 const OtherWorks = React.lazy(() => import('./views/japanese/OtherWorks'))
 
+// Other
+const AmazonWarehouse = React.lazy(() => import('./views/other/AmazonWarehouse'))
+const eBay = React.lazy(() => import('./views/other/eBay'))
+const CCSFBookstore = React.lazy(() => import('./views/other/CCSFBookstore'))
+const JapanTownRetail = React.lazy(() => import('./views/other/JapanTownRetail'))
+const PharmacyTechnician = React.lazy(() => import('./views/other/PharmacyTechnician'))
+const TruepillWarehouse = React.lazy(() => import('./views/other/TruepillWarehouse'))
+
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
@@ -74,8 +82,14 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
+  { path: '/', exact: true, name: 'About' },
   { path: '/degree', name: 'Degree', element: Degree },
+  { path: '/amazonwarehouse', name: 'AmazonWarehouse', element: AmazonWarehouse },
+  { path: '/ccsfbookstore', name: 'CCSFBookstore', element: CCSFBookstore },
+  { path: '/ebay', name: 'eBay', element: eBay },
+  { path: '/japantownretail', name: 'JapanTownRetail', element: JapanTownRetail },
+  { path: '/pharmacytechnician', name: 'PharmacyTechnician', element: PharmacyTechnician },
+  { path: '/truepillwarehouse', name: 'TruepillWarehouse', element: TruepillWarehouse },
   { path: '/vrnihongo', name: 'VRNihongo', element: VRNihongo },
   { path: '/otherworks', name: 'OtherWorks', element: OtherWorks },
   { path: '/animator/threedanimations', name: 'ThreeDAnimations', element: ThreeDAnimations },
