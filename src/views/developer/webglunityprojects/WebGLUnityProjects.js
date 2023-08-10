@@ -22,9 +22,13 @@ const WebGLUnityProjects = () => {
         <CCardBody>
           {/* <Unity unityProvider={unityProvider} /> */}
           <p>Currently broken, awaiting on a support ticket</p>
-          {/* <a href="assets/webgl/WebGL2/index.html" target="_blank">
+          <a
+            href="https://yukimurakyoko.github.io/portfolio/Unity/WebGL/Epic/index.html"
+            target="_blank"
+            rel="noreferrer"
+          >
             Game Link
-          </a> */}
+          </a>
         </CCardBody>
       </CCard>
     </>
