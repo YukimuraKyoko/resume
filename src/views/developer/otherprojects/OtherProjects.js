@@ -46,19 +46,6 @@ const OtherProjects = () => {
           </ul>
         </CCardBody>
       </CCard>
-      <CCard className="mb-4">
-        <CCardHeader>
-          <h4>Unity HLSL - Shader Sphere, 2019</h4>
-        </CCardHeader>
-        <CCardBody>
-          <video controls width="100%" height="100%" src={hlslvid} />
-          <img src={shaderspherepic} width={'50%'}></img>
-          <ul>
-            <li>Learned how to program in HLSL, a graphics programming langauge.</li>
-            <li>Knowledge of 3D pixel matrices</li>
-          </ul>
-        </CCardBody>
-      </CCard>
     </>
   )
 }

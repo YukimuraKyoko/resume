@@ -19,7 +19,7 @@ const WebGLUnityProjects = () => {
     <>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Epic Roll a Ball</h4>
+          <h4>Epic Roll a Ball, 2018</h4>
         </CCardHeader>
         <CCardBody>
           {/* <Unity unityProvider={unityProvider} /> */}
@@ -35,11 +35,20 @@ const WebGLUnityProjects = () => {
           >
             Open Game
           </a>
+          <ul>
+            <li>
+              Understanding of Post processing (Camera bloom, distance blur, motion blur, other
+              camera effects)
+            </li>
+            <li>Understanding of coding basic locomotion in C#</li>
+            <li>Understanding of Normal Maps, Reflection probes, light probes, baked lighting</li>
+            <li>All 3D models in this project is modeled by me in Blender</li>
+          </ul>
         </CCardBody>
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Shadersphere</h4>
+          <h4>Unity3D HLSL - Shadersphere, 2019</h4>
         </CCardHeader>
         <CCardBody>
           {/* <Unity unityProvider={unityProvider} /> */}
@@ -55,6 +64,10 @@ const WebGLUnityProjects = () => {
           >
             Open Game
           </a>
+          <ul>
+            <li>Learned how to program in HLSL, a graphics programming langauge.</li>
+            <li>Knowledge of 3D pixel matrices</li>
+          </ul>
         </CCardBody>
       </CCard>
     </>
