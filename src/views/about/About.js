@@ -23,40 +23,17 @@ const About = () => {
           <h4>Goals</h4>
         </CCardHeader>
         <CCardBody>
-          <p>
-            My goals varies depending on what I am currently studying wither it be programming or
-            animations, or even another language. But at the end of the day my goal would be to work
-            on my own project with multiple skill sets where it&apos;s needed.
-          </p>
-
-          <p>
-            An example is game development that requires other people with different talents to
-            pitch in; UI Design, Animations, Art Designs, Game Designs, Programming, Server
-            maintenance, etc.
-          </p>
-
-          <p>
-            My longer term goal would be to eventually start my own company and become well enough
-            to start hiring people as well as creating jobs. I like to help others and giving people
-            chances especially when they&apos;re struggling looking for Entry jobs right after
-            graduating from college.
-          </p>
+          <p>My goal is to help others and starting my own game or animation company.</p>
         </CCardBody>
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Strengths / Weaknesses</h4>
+          <h4>Areas of Improvement</h4>
         </CCardHeader>
         <CCardBody>
           <p>
-            I am weak in working on the same project for a prolonged period (over the course of a
-            few weeks or so), before getting burnt out and I start losing motivation. This also
-            applies to repetitive tasks, such as all day customer service, or all day restocking.
-          </p>
-          <p>
-            To counter this, I&apos;m strong in learning a lot of things at once and prefer to do
-            multiple tasks or alternating between them on a week to week basis, juggling in between
-            projects to help stay motivated and always working on something different.
+            Even though I have a lot of skills, I&apos;m endlessly curious about how to put them
+            altogether to create something to show the world.
           </p>
         </CCardBody>
       </CCard>
