@@ -51,7 +51,7 @@ const About = () => {
           <p>
             I&apos;m also a huge Anime fan! I&apos;ve been liking both Japanese Culture and Anime
             since I was around 8 years old til now, I&apos;ve already partially worked in the anime
-            industry before and it feels exactly where I belong!
+            industry and it was a great experience!
           </p>
         </CCardBody>
       </CCard>
