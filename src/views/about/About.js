@@ -23,7 +23,7 @@ const About = () => {
           <h4>Goals</h4>
         </CCardHeader>
         <CCardBody>
-          <p>My goal is to help others and starting my own game or animation company.</p>
+          <p>My goal is to help others and starting my own game and/or animation company.</p>
         </CCardBody>
       </CCard>
       <CCard className="mb-4">
