@@ -56,12 +56,12 @@ const VRDeveloper = () => {
           <h4>XPR Labs - UI Design Planner, 2021-2022</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={XPRpic1} />
-          <img src={XPRpic2} />
-          <img src={XPRpic3} />
-          <img src={XPRpic4} />
-          <img src={XPRpic5} />
-          <img src={XPRpic6} />
+          <img src={XPRpic1} alt="" />
+          <img src={XPRpic2} alt="" />
+          <img src={XPRpic3} alt="" />
+          <img src={XPRpic4} alt="" />
+          <img src={XPRpic5} alt="" />
+          <img src={XPRpic6} alt="" />
           <ul>
             <li>
               <a href="https://drive.google.com/file/d/1coCDolUXWzn4b4-0cf9Gwe4Vvlt4pZfY/view?usp=sharing">

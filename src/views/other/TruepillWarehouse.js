@@ -10,7 +10,7 @@ const TruepillWarehouse = () => {
           <h4>Truepill - Warehouse Associate, 2021</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={truepill} width="70%"></img>
+          <img src={truepill} width="70%" alt=""></img>
           <ul>
             <li>
               Website Link: <a href="https://truepill.com/"> Here</a>

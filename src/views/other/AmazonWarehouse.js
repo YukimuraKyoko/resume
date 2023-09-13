@@ -12,7 +12,7 @@ const AmazonWarehouse = () => {
           <h4>Amazon Warehouse - Warehouse Associate, 2022</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={amazonwarehouse} width="50%"></img>
+          <img src={amazonwarehouse} width="50%" alt=""></img>
           <ul>
             <li>
               Equipped finger scanner to scan packages and scanning the destination of placement.

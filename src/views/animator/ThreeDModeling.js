@@ -15,11 +15,11 @@ const ThreeDModeling = () => {
           <h4>VRChat - Homeworld, 2019</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={home1} width="70%"></img>
-          <img src={home2} width="70%"></img>
-          <img src={home3} width="70%"></img>
-          <img src={home4} width="70%"></img>
-          <img src={home5} width="70%"></img>
+          <img src={home1} width="70%" alt=""></img>
+          <img src={home2} width="70%" alt=""></img>
+          <img src={home3} width="70%" alt=""></img>
+          <img src={home4} width="70%" alt=""></img>
+          <img src={home5} width="70%" alt=""></img>
           <ul>
             <li>
               Modeled all from scratch, including UV Mapping, cloth simulation & freezing,

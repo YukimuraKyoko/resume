@@ -1,9 +1,7 @@
 import React from 'react'
 
 import { CCard, CCardBody, CCardHeader } from '@coreui/react'
-import hlslvid from 'src/assets/videos/ShaderSphereDemo.mp4'
 import jlptworldvid from 'src/assets/videos/JLPTStudyHall.mp4'
-import shaderspherepic from 'src/assets/images/ShaderSphereExplanation.jpg'
 import nihongoboardvid from 'src/assets/videos/Nihongoboard.mp4'
 
 const OtherProjects = () => {

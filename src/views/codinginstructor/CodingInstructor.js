@@ -15,6 +15,7 @@ const CodingInstructor = () => {
           <img
             src={mvcodepic}
             title="I'm in the picture, tall girl on the right with my hand my waist"
+            alt=""
           ></img>
           <h5>
             MVCode is an educational company that hires individuals with programming knowledge, to
@@ -44,6 +45,7 @@ const CodingInstructor = () => {
             src={cwupic}
             width="70%"
             title="I'm in the picture, tall girl on the right with my hand my waist"
+            alt=""
           ></img>
           <h5>
             CodeWithUs is MVCode(entry above), which has been migrated over to CodeWithUs during the

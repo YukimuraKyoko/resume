@@ -14,9 +14,9 @@ const eBay = () => {
           <h4>Personal Ebay Store - Top Rated Seller, 2023-2024</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={ebay1} width="70%"></img>
-          <img src={ebay2} width="60%"></img>
-          <img src={ebay3} width="40%"></img>
+          <img src={ebay1} width="70%" alt=""></img>
+          <img src={ebay2} width="60%" alt=""></img>
+          <img src={ebay3} width="40%" alt=""></img>
           <ul>
             <li>
               Store Link: <a href="https://www.ebay.com/str/kyokostore">here</a>

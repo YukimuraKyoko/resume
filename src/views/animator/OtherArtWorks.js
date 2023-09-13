@@ -17,7 +17,7 @@ const OtherArtWorks = () => {
               <h4>Fist Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={drawing1} width="50%"></img>
+              <img src={drawing1} width="50%" alt=""></img>
               <ul>
                 <li>Understanding of hand ananomy</li>
                 <li>Understanding of shading</li>
@@ -32,7 +32,7 @@ const OtherArtWorks = () => {
               <h4>Butterfly Knife Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={drawing2} width="63%"></img>
+              <img src={drawing2} width="63%" alt=""></img>
               <ul>
                 <li>Understanding of 1 point perspective</li>
                 <li>Understanding of metallic shading or light reflections</li>
@@ -46,7 +46,7 @@ const OtherArtWorks = () => {
               <h4>Old House Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={drawing3} width="84%"></img>
+              <img src={drawing3} width="84%" alt=""></img>
               <ul>
                 <li>My old house that I grew up in from 1998 to 2012</li>
               </ul>
@@ -59,7 +59,7 @@ const OtherArtWorks = () => {
               <h4>Magazine/Fashion Sketch, 2014</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={drawing4} width="50%"></img>
+              <img src={drawing4} width="50%" alt=""></img>
             </CCardBody>
             <ul>
               <li>Understanding of sketching by quadrants</li>
@@ -72,7 +72,7 @@ const OtherArtWorks = () => {
               <h4>Key Sketch, 2015</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={drawing5} width="50%"></img>
+              <img src={drawing5} width="50%" alt=""></img>
               <ul>
                 <li>Casual speed sketching, this one took a total of 14 minutes</li>
               </ul>

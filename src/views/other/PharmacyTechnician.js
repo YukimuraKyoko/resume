@@ -11,7 +11,7 @@ const About = () => {
           <h4>SFSU Pharmacy Technician Certificate, 2023</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={certificate} width="60%"></img>
+          <img src={certificate} width="60%" alt=""></img>
           <br></br>
           <a
             type="button"
@@ -30,7 +30,7 @@ const About = () => {
           <h4>Walgreens Pharmacy Technician Externship, 2023</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={walgreens} width="60%"></img>
+          <img src={walgreens} width="60%" alt=""></img>
           <ul>
             <li>A 2 week (40 hours) externship program from SFSU to Walgreens</li>
             <li>Filled prescriptions</li>

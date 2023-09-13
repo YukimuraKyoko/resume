@@ -11,7 +11,7 @@ const CCSFBookstore = () => {
           <h4>CCSF Bookstore - Retail Associate, 2015</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={ccsfbookstore} width="50%"></img>
+          <img src={ccsfbookstore} width="50%" alt=""></img>
           <ul>
             <li>Helped customers find what they are looking for, or giving advice</li>
             <li>Used a dolly to carry over 50lb of textbooks to restock. </li>

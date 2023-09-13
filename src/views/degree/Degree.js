@@ -12,7 +12,7 @@ const Degree = () => {
           <h4>San Francisco State University Bachelors Degree, 2019</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={cerf} align="bottom" width={'50%'} height={'50%'} />
+          <img src={cerf} align="bottom" width={'50%'} height={'50%'} alt="" />
           <div>
             <Image img src={cerf} alt="cerf" class="center"></Image>
             <br></br>

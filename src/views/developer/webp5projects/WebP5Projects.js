@@ -1,5 +1,4 @@
 import React from 'react'
-import Sketch from 'react-p5'
 import { CCard, CCardBody, CCardHeader } from '@coreui/react'
 
 const WebP5Projects = () => {
@@ -16,6 +15,7 @@ const WebP5Projects = () => {
               scrolling="no"
               width="1000px"
               height="720px"
+              title="platformer"
             ></iframe>
           </div>
           <ul>
@@ -53,13 +53,17 @@ const WebP5Projects = () => {
               scrolling="no"
               width="850px"
               height="500px"
+              title="flappycircle"
             ></iframe>
           </div>
           <ul>
             <li>
               A project I&apos;ve created on my own during my time working at
-              <a href=""> MVCode/CodeWithUs</a>.{' '}
-              <i>May need to click on game to enable controls.</i>
+              <a href="https://codewithus.com/" target="_blank" rel="noreferrer">
+                {' '}
+                MVCode/CodeWithUs
+              </a>
+              . <i>May need to click on game to enable controls.</i>
             </li>
             <li>
               <a href="https://p5js.org/">P5js.org</a>

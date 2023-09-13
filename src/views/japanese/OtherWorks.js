@@ -3,7 +3,7 @@ import proposal from 'src/assets/JPGameProposal.pdf'
 import watashi1 from 'src/assets/images/Watashi1.jpg'
 import watashi2 from 'src/assets/images/Watashi2.jpg'
 
-import { CCard, CCardBody, CCardHeader, CCol, CFormControlWrapper, CRow } from '@coreui/react'
+import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
 
 const OtherWorks = () => {
   return (
@@ -15,7 +15,7 @@ const OtherWorks = () => {
           </CCardHeader>
           <CCardBody>
             <div className='flex-grow-2"'>
-              <iframe src={proposal} width="100%" height="100%"></iframe>
+              <iframe src={proposal} width="100%" height="100%" title="proposal"></iframe>
             </div>
             <ul>
               <li>
@@ -32,7 +32,7 @@ const OtherWorks = () => {
               <h4>Handwritten Essay about me (1)</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={watashi1} width="70%"></img>
+              <img src={watashi1} width="70%" alt=""></img>
               <ul>
                 <li>Summary: Talking about my life, what I do on a daily basis</li>
                 <li>Understands how to write kanji</li>
@@ -47,7 +47,7 @@ const OtherWorks = () => {
               <h4>Handwritten Essay about me (2)</h4>
             </CCardHeader>
             <CCardBody>
-              <img src={watashi2} width="70%"></img>
+              <img src={watashi2} width="70%" alt=""></img>
               <ul>
                 <li>Summary: Talking about what I do, my hobbies, etc</li>
               </ul>

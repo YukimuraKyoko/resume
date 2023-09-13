@@ -13,7 +13,7 @@ const VRNihongo = () => {
           <h4>VRNihongo - Moe Sensei, 2019</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={vrnihongo} width="70%"></img>
+          <img src={vrnihongo} width="70%" alt=""></img>
           <ul>
             <li>
               VRNihongo website: <a href="https://www.vrnihongo.com/">here</a>
@@ -38,8 +38,8 @@ const VRNihongo = () => {
           <h4>VRNihongo - Discord Server, 2019</h4>
         </CCardHeader>
         <CCardBody>
-          <img src={vrnihongo1} width="70%"></img>
-          <img src={vrnihongo2} width="50%"></img>
+          <img src={vrnihongo1} width="70%" alt=""></img>
+          <img src={vrnihongo2} width="50%" alt=""></img>
           <ul>
             <li>
               I&apos;ve created this discord server as a community server back around 2019, started
