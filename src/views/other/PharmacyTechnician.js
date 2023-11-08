@@ -27,17 +27,18 @@ const About = () => {
       </CCard>
       <CCard className="mb-4">
         <CCardHeader>
-          <h4>Walgreens Pharmacy Technician Externship, 2023</h4>
+          <h4>Walgreens Pharmacy Technician, 2023</h4>
         </CCardHeader>
         <CCardBody>
           <img src={walgreens} width="60%" alt=""></img>
           <ul>
-            <li>A 2 week (40 hours) externship program from SFSU to Walgreens</li>
             <li>Filled prescriptions</li>
             <li>Deleting prescriptions, and refills</li>
             <li>Restocked medicine in categorized aisles</li>
             <li>Short-hand typed prescriptions on patient profiles</li>
             <li>Organized &quot;ready&quot; prescriptions for pick up</li>
+            <li>Sorting out Health Insurance problems</li>
+            <li>Transfering prescriptions</li>
           </ul>
         </CCardBody>
       </CCard>
