@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.fd98adcb.css",
-    "main.js": "/resume/static/js/main.78599d50.js",
+    "main.js": "/resume/static/js/main.5c67a605.js",
     "static/css/175.ec35a1c5.chunk.css": "/resume/static/css/175.ec35a1c5.chunk.css",
-    "static/js/175.2bfd8792.chunk.js": "/resume/static/js/175.2bfd8792.chunk.js",
+    "static/js/175.75128f0e.chunk.js": "/resume/static/js/175.75128f0e.chunk.js",
     "static/js/24.d7ea185e.chunk.js": "/resume/static/js/24.d7ea185e.chunk.js",
     "static/js/9.2b773d0f.chunk.js": "/resume/static/js/9.2b773d0f.chunk.js",
     "static/js/1.4f210dd4.chunk.js": "/resume/static/js/1.4f210dd4.chunk.js",
@@ -18,7 +18,7 @@
     "static/js/399.1ace770a.chunk.js": "/resume/static/js/399.1ace770a.chunk.js",
     "static/js/146.d318caa3.chunk.js": "/resume/static/js/146.d318caa3.chunk.js",
     "static/js/761.cd40ce0c.chunk.js": "/resume/static/js/761.cd40ce0c.chunk.js",
-    "static/js/625.43a65ebc.chunk.js": "/resume/static/js/625.43a65ebc.chunk.js",
+    "static/js/26.8dc03699.chunk.js": "/resume/static/js/26.8dc03699.chunk.js",
     "static/js/226.d46e6877.chunk.js": "/resume/static/js/226.d46e6877.chunk.js",
     "static/js/442.eb9db310.chunk.js": "/resume/static/js/442.eb9db310.chunk.js",
     "static/js/205.31a16262.chunk.js": "/resume/static/js/205.31a16262.chunk.js",
@@ -38,6 +38,7 @@
     "static/media/MelodyAnimationManager.mp4": "/resume/static/media/MelodyAnimationManager.700ffb0ef6ceefc2a4e1.mp4",
     "static/media/Nihongoboard.mp4": "/resume/static/media/Nihongoboard.b7f3b9f666fe1f738fba.mp4",
     "static/media/ShaderSphereDemo.mp4": "/resume/static/media/ShaderSphereDemo.61e5de0d7f5e425eb0a8.mp4",
+    "static/media/Animation1.mp4": "/resume/static/media/Animation1.a4ce01efbe589570029e.mp4",
     "static/media/RollABall.mp4": "/resume/static/media/RollABall.f4d252b8f182e2d8e81f.mp4",
     "static/media/CyberCity1.png": "/resume/static/media/CyberCity1.7798adfeb8f19a5a5c10.png",
     "static/media/Watashi2.jpg": "/resume/static/media/Watashi2.75ca8951d0695c601470.jpg",
@@ -80,9 +81,9 @@
     "static/media/8.jpg": "/resume/static/media/8.35ee8919ea545620a475.jpg",
     "index.html": "/resume/index.html",
     "main.fd98adcb.css.map": "/resume/static/css/main.fd98adcb.css.map",
-    "main.78599d50.js.map": "/resume/static/js/main.78599d50.js.map",
+    "main.5c67a605.js.map": "/resume/static/js/main.5c67a605.js.map",
     "175.ec35a1c5.chunk.css.map": "/resume/static/css/175.ec35a1c5.chunk.css.map",
-    "175.2bfd8792.chunk.js.map": "/resume/static/js/175.2bfd8792.chunk.js.map",
+    "175.75128f0e.chunk.js.map": "/resume/static/js/175.75128f0e.chunk.js.map",
     "24.d7ea185e.chunk.js.map": "/resume/static/js/24.d7ea185e.chunk.js.map",
     "9.2b773d0f.chunk.js.map": "/resume/static/js/9.2b773d0f.chunk.js.map",
     "1.4f210dd4.chunk.js.map": "/resume/static/js/1.4f210dd4.chunk.js.map",
@@ -97,7 +98,7 @@
     "399.1ace770a.chunk.js.map": "/resume/static/js/399.1ace770a.chunk.js.map",
     "146.d318caa3.chunk.js.map": "/resume/static/js/146.d318caa3.chunk.js.map",
     "761.cd40ce0c.chunk.js.map": "/resume/static/js/761.cd40ce0c.chunk.js.map",
-    "625.43a65ebc.chunk.js.map": "/resume/static/js/625.43a65ebc.chunk.js.map",
+    "26.8dc03699.chunk.js.map": "/resume/static/js/26.8dc03699.chunk.js.map",
     "226.d46e6877.chunk.js.map": "/resume/static/js/226.d46e6877.chunk.js.map",
     "442.eb9db310.chunk.js.map": "/resume/static/js/442.eb9db310.chunk.js.map",
     "205.31a16262.chunk.js.map": "/resume/static/js/205.31a16262.chunk.js.map",
@@ -114,6 +115,6 @@
   },
   "entrypoints": [
     "static/css/main.fd98adcb.css",
-    "static/js/main.78599d50.js"
+    "static/js/main.5c67a605.js"
   ]
 }
